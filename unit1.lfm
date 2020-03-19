@@ -1,0 +1,221 @@
+object Form1: TForm1
+  Left = 294
+  Height = 273
+  Top = 196
+  Width = 565
+  Caption = 'Form1'
+  ClientHeight = 273
+  ClientWidth = 565
+  Color = clActiveCaption
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Shape2: TShape
+    Left = 152
+    Height = 32
+    Top = 224
+    Width = 273
+    Brush.Color = clGray
+  end
+  object Shape1: TShape
+    Left = 152
+    Height = 33
+    Top = 128
+    Width = 273
+    Brush.Color = clGray
+  end
+  object shapeLightsBackground: TShape
+    Left = 24
+    Height = 232
+    Top = 24
+    Width = 80
+    Brush.Color = clGray
+  end
+  object shapeLightsRed: TShape
+    Left = 32
+    Height = 65
+    Top = 32
+    Width = 65
+    Brush.Color = clBlack
+    Shape = stCircle
+  end
+  object shapeLightsYellow: TShape
+    Left = 32
+    Height = 65
+    Top = 104
+    Width = 65
+    Brush.Color = clBlack
+    Shape = stCircle
+  end
+  object shapeLightsGreen: TShape
+    Left = 32
+    Height = 65
+    Top = 176
+    Width = 65
+    Brush.Color = clBlack
+    Shape = stCircle
+  end
+  object labelTitle: TLabel
+    Left = 112
+    Height = 20
+    Top = 8
+    Width = 346
+    Caption = 'Die wundervolle Ampel des Grauens'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnLightsRed: TButton
+    Left = 479
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = 'Rot'
+    OnClick = btnLightsRedClick
+    TabOrder = 0
+  end
+  object btnLightsRedYellow: TButton
+    Left = 479
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'RotGelb'
+    OnClick = btnLightsRedYellowClick
+    TabOrder = 1
+  end
+  object btnLightsYellow: TButton
+    Left = 479
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Gelb'
+    OnClick = btnLightsYellowClick
+    TabOrder = 2
+  end
+  object btnLightsGreen: TButton
+    Left = 480
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'Grün'
+    OnClick = btnLightsGreenClick
+    TabOrder = 3
+  end
+  object btnLightsWarningOn: TBitBtn
+    Left = 256
+    Height = 25
+    Top = 131
+    Width = 75
+    Caption = 'An'
+    Kind = bkIgnore
+    ModalResult = 5
+    OnClick = btnLightsWarningOnClick
+    TabOrder = 4
+  end
+  object btnLightsWarningOff: TBitBtn
+    Left = 344
+    Height = 25
+    Top = 131
+    Width = 75
+    Caption = 'Aus'
+    Kind = bkIgnore
+    ModalResult = 5
+    OnClick = btnLightsWarningOffClick
+    TabOrder = 5
+  end
+  object btnLightsAutomaticOn: TBitBtn
+    Left = 256
+    Height = 22
+    Top = 227
+    Width = 75
+    Caption = 'An'
+    Kind = bkRetry
+    ModalResult = 4
+    OnClick = btnLightsAutomaticOnClick
+    TabOrder = 6
+  end
+  object btnLightsAutomaticOff: TBitBtn
+    Left = 344
+    Height = 22
+    Top = 227
+    Width = 75
+    Caption = 'Aus'
+    Kind = bkRetry
+    ModalResult = 4
+    OnClick = btnLightsAutomaticOffClick
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 160
+    Height = 20
+    Top = 136
+    Width = 85
+    Caption = 'Warnblinker'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 160
+    Height = 20
+    Top = 229
+    Width = 75
+    Caption = 'Automatik'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape3: TShape
+    Left = 472
+    Height = 137
+    Top = 120
+    Width = 89
+    Brush.Color = clGray
+  end
+  object timerWarnLights: TTimer
+    OnTimer = timerWarnLightsTimer
+    left = 160
+    top = 48
+  end
+  object timerAutomaitc1: TTimer
+    OnTimer = timerAutomaitc1Timer
+    OnStartTimer = btnLightsRedClick
+    left = 224
+    top = 48
+  end
+  object timerAutomaitc2: TTimer
+    OnTimer = timerAutomaitc2Timer
+    OnStartTimer = btnLightsRedYellowClick
+    left = 256
+    top = 48
+  end
+  object timerAutomaitc3: TTimer
+    OnTimer = timerAutomaitc3Timer
+    OnStartTimer = btnLightsGreenClick
+    left = 288
+    top = 48
+  end
+  object timerAutomaitc4: TTimer
+    OnTimer = timerAutomaitc4Timer
+    OnStartTimer = btnLightsYellowClick
+    left = 320
+    top = 48
+  end
+end
