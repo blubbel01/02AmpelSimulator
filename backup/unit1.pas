@@ -24,6 +24,9 @@ type
     Label1: TLabel;
     Label2: TLabel;
     labelTitle: TLabel;
+    Shape1: TShape;
+    Shape2: TShape;
+    Shape3: TShape;
     shapeLightsBackground: TShape;
     shapeLightsRed: TShape;
     shapeLightsYellow: TShape;

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 270
+  Left = 769
   Height = 273
-  Top = 216
+  Top = 317
   Width = 565
   Caption = 'Form1'
   ClientHeight = 273
@@ -9,6 +9,20 @@ object Form1: TForm1
   Color = clActiveCaption
   OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
+  object Shape2: TShape
+    Left = 160
+    Height = 32
+    Top = 216
+    Width = 273
+    Brush.Color = clGray
+  end
+  object Shape1: TShape
+    Left = 160
+    Height = 33
+    Top = 120
+    Width = 273
+    Brush.Color = clGray
+  end
   object shapeLightsBackground: TShape
     Left = 24
     Height = 232
@@ -57,45 +71,45 @@ object Form1: TForm1
     ParentFont = False
   end
   object btnLightsRed: TButton
-    Left = 479
+    Left = 477
     Height = 25
-    Top = 128
+    Top = 120
     Width = 75
     Caption = 'Rot'
     OnClick = btnLightsRedClick
     TabOrder = 0
   end
   object btnLightsRedYellow: TButton
-    Left = 479
+    Left = 477
     Height = 25
-    Top = 160
+    Top = 152
     Width = 75
     Caption = 'RotGelb'
     OnClick = btnLightsRedYellowClick
     TabOrder = 1
   end
   object btnLightsYellow: TButton
-    Left = 479
+    Left = 477
     Height = 25
-    Top = 192
+    Top = 184
     Width = 75
     Caption = 'Gelb'
     OnClick = btnLightsYellowClick
     TabOrder = 2
   end
   object btnLightsGreen: TButton
-    Left = 480
+    Left = 478
     Height = 25
-    Top = 224
+    Top = 216
     Width = 75
     Caption = 'Grün'
     OnClick = btnLightsGreenClick
     TabOrder = 3
   end
   object btnLightsWarningOn: TBitBtn
-    Left = 256
+    Left = 264
     Height = 25
-    Top = 131
+    Top = 123
     Width = 75
     Caption = 'An'
     Kind = bkIgnore
@@ -104,9 +118,9 @@ object Form1: TForm1
     TabOrder = 4
   end
   object btnLightsWarningOff: TBitBtn
-    Left = 344
+    Left = 352
     Height = 25
-    Top = 131
+    Top = 123
     Width = 75
     Caption = 'Aus'
     Kind = bkIgnore
@@ -115,9 +129,9 @@ object Form1: TForm1
     TabOrder = 5
   end
   object btnLightsAutomaticOn: TBitBtn
-    Left = 256
+    Left = 264
     Height = 22
-    Top = 227
+    Top = 219
     Width = 75
     Caption = 'An'
     Kind = bkRetry
@@ -126,9 +140,9 @@ object Form1: TForm1
     TabOrder = 6
   end
   object btnLightsAutomaticOff: TBitBtn
-    Left = 344
+    Left = 352
     Height = 22
-    Top = 227
+    Top = 219
     Width = 75
     Caption = 'Aus'
     Kind = bkRetry
@@ -137,9 +151,9 @@ object Form1: TForm1
     TabOrder = 7
   end
   object Label1: TLabel
-    Left = 160
+    Left = 168
     Height = 20
-    Top = 136
+    Top = 128
     Width = 85
     Caption = 'Warnblinker'
     Font.CharSet = ANSI_CHARSET
@@ -153,9 +167,9 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 160
+    Left = 168
     Height = 20
-    Top = 224
+    Top = 221
     Width = 75
     Caption = 'Automatik'
     Font.CharSet = ANSI_CHARSET
@@ -167,6 +181,21 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+  end
+  object Shape3: TShape
+    Left = 470
+    Height = 137
+    Top = 112
+    Width = 89
+    Brush.Color = clGray
+  end
+  object Label3: TLabel
+    Left = 432
+    Height = 15
+    Top = 256
+    Width = 127
+    Caption = '© 2020 Paul David Jippa'
+    ParentColor = False
   end
   object timerWarnLights: TTimer
     OnTimer = timerWarnLightsTimer

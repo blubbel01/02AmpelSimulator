@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 270
+  Left = 294
   Height = 273
-  Top = 216
+  Top = 196
   Width = 565
   Caption = 'Form1'
   ClientHeight = 273
@@ -9,6 +9,20 @@ object Form1: TForm1
   Color = clActiveCaption
   OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
+  object Shape2: TShape
+    Left = 152
+    Height = 32
+    Top = 224
+    Width = 273
+    Brush.Color = clGray
+  end
+  object Shape1: TShape
+    Left = 152
+    Height = 33
+    Top = 128
+    Width = 273
+    Brush.Color = clGray
+  end
   object shapeLightsBackground: TShape
     Left = 24
     Height = 232
@@ -155,7 +169,7 @@ object Form1: TForm1
   object Label2: TLabel
     Left = 160
     Height = 20
-    Top = 224
+    Top = 229
     Width = 75
     Caption = 'Automatik'
     Font.CharSet = ANSI_CHARSET
@@ -167,6 +181,13 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+  end
+  object Shape3: TShape
+    Left = 472
+    Height = 137
+    Top = 120
+    Width = 89
+    Brush.Color = clGray
   end
   object timerWarnLights: TTimer
     OnTimer = timerWarnLightsTimer
